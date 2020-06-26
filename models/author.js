@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
 
   author.associate = function(models) {
     // associations can be defined here
-    models.author.hasMany(models.article)
+    models.author.hasMany(models.article);
   }
 
   author.prototype.getFullName = function(){
